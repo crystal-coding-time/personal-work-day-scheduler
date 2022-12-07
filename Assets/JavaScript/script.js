@@ -28,8 +28,18 @@ $(function  timeManager() {
       $(this).removeClass("future");
       $(this).removeClass("present");
       $(this).addClass("past");
+    } else if (timeBlock === currentTime) {
+      $(this).removeClass("future");
+      $(this).removeClass("past");
+      $(this).addClass("present");
+    } else {
+      $(this).removeClass("past");
+      $(this).removeClass("present");
+      $(this).addClass("future");
     }
+
 console.log(timeBlock);
+timeManager();
   })
 });
 
