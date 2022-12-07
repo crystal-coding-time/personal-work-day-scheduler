@@ -18,8 +18,18 @@ $(".saveBtn").on("click", function () {
 
 $(function  timeManager() {
 // Check the current hour
+  var currentTime = today.hour()
+  console.log(currentTime); // testing the varible pulls the correct data
 
-var currentTime = today.hour()
-console.log(currentTime);
+  $(".time-block").each( function () {
+    var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
+
+    if (timeBlock < currentTime ) {
+      $(this).removeClass("future");
+      $(this).removeClass("present");
+      $(this).addClass("past");
+    }
+console.log(timeBlock);
+  })
 });
 
