@@ -16,8 +16,10 @@ $(".saveBtn").on("click", function () {
 })
 
 
-$(function () {
+$(function  timeManager() {
+// Check the current hour
 
-
+var currentTime = today.hour()
+console.log(currentTime);
 });
 
