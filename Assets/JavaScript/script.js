@@ -24,6 +24,7 @@ $(function  timeManager() {
   console.log(currentTime); // testing the varible pulls the correct data
 
   $(".time-block").each( function () {
+  
     var timeBlock = parseInt($(this).attr("id").split("hour")[1]);
 
     if (timeBlock < currentTime ) {
@@ -40,8 +41,9 @@ $(function  timeManager() {
       $(this).addClass("future");
     }
 
-console.log(timeBlock);
-
+  })
+// Get item from local storage if any
+  
 $("#hour9 .description").val(localStorage.getItem("hour9"));
 $("#hour10 .description").val(localStorage.getItem("hour10"));
 $("#hour11 .description").val(localStorage.getItem("hour11"));
@@ -53,10 +55,8 @@ $("#hour16 .description").val(localStorage.getItem("hour16"));
 $("#hour17 .description").val(localStorage.getItem("hour17"));
 $("#hour18 .description").val(localStorage.getItem("hour18"));
 
-timeManager();
-  })
+  timeManager();
 });
 
-  // Get item from local storage if any
   
  
