@@ -2,10 +2,6 @@
 
 This is a work day scheduler with color changing hourly display blocks to help the user better organize their day.   
 
-# Scope of Work
-
-I added JavaScript to the supplied HTML and CSS code.
-
 ## Website URL
 
 My website can be accessed [here](https://crystal-coding-time.github.io/personal-work-day-scheduler/)
