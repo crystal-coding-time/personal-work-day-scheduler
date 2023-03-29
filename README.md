@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-This is a work day scheduler with color changing hourly display blocks to help the user better organize their day.   
+This is a work day scheduler with color changing hourly display blocks to help the user better organize their day. The user can enter text into the blocks and save it to local storage. The blocks will change color based on the current time of day. The user can also clear the local storage by clicking the "Clear Schedule" button.
 
 ## Website URL
 
